@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,pos;
+    cin>>n;
+    int arr[n];
+    for(int i = 0 ; i<n ; i++){
+        cin>>arr[i];
+    }
+    int length = sizeof(arr) / sizeof(int);
+    cout<<length;
+    cin>>pos;
+    
+    if(length != 0 && length-1 != pos && pos >= 0 && pos < length) {
+        cout<<"true";
+    }
+    else{
+        cout<<"false";
+    }
+    
+    return 0;
+}
